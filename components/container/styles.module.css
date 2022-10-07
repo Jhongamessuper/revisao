@@ -1,5 +1,50 @@
-.container{
+/*.container{
     width: 100%;
     font-size: xx-large;
     border: 1px solid rgb(77, 4, 172);
+    
+}*/
+  
+.body{ /*É corpo onde vai todo o código*/
+  margin: 0;
+  padding: 0;
+}
+
+.container{ /*É aonde vai conter todos os objetos e propriedades*/
+  display: grid; /*O display é a tela e está dizendo que na tela vai ter grades*/
+  
+  grid-template: "a a a a" /*Isso é as colunas que vai ficar*/
+                 "b c c c"
+                 "d d d d";
+  width: 100vw;
+  height: 100vh;
+  grid-gap: 5px;
+  background-color: black
+}
+
+.header{ /*É o cabeçalho tipo uma introdução*/
+  display: grid;
+  height: 10vh;
+  grid-area: a;
+  background-color: gray;
+}
+.main{ /*É a parte principal como o meio de uma página*/
+  display: grid;
+  height: 65vh;
+  grid-area: c;
+  background-color: purple;
+}
+
+.aside{ /*É como uma parte do lado esquerdo de uma página*/
+  display: grid;
+  height: 65vh;
+  grid-area: b;
+  background-color: green;
+}
+
+.footer{ /*É a parte de baixo de uma página no final dela*/
+  display: grid;
+  height: 20vh;
+  grid-area: d;
+  background-color: blue;
 }
